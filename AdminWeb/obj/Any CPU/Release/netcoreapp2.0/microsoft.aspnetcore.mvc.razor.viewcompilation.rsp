@@ -1,0 +1,14 @@
+G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=AdminWeb
+--content-root=G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb
+--file=G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb\Views\Home\About.cshtml
+--file=G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb\Views\Home\Contact.cshtml
+--file=G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb\Views\Home\Index.cshtml
+--file=G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb\Views\Mgr\Index.cshtml
+--file=G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb\Views\Shared\Error.cshtml
+--file=G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb\Views\Shared\_Layout.cshtml
+--file=G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb\Views\User\Login.cshtml
+--file=G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb\Views\_ViewImports.cshtml
+--file=G:\2.钟都\WorkSpace\MyWork\AdminTemplate\AdminWeb\Views\_ViewStart.cshtml
