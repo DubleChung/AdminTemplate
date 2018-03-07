@@ -21,7 +21,23 @@ namespace AdminWeb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc()
+                    //全局配置Json序列化处理
+                    .AddJsonOptions(options =>
+                    {
+
+                        //EF Core中默认为驼峰样式序列化处理key
+                        //options.ContractResolver = new CamelCasePropertyNamesContractResolver();
+                        //使用默认方式，不更改元数据的key的大小写
+                        //options.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();
+
+                        //忽略循环引用
+                        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                        //不使用驼峰样式的key
+                        options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();
+                        //设置时间格式
+                        options.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss";
+                    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -63,7 +63,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-gears"></i>
+                            <i class="fa fa-sliders"></i>
                             <span class="nav-label">系统管理</span>
                             <span class="fa arrow"></span>
                         </a>
@@ -81,7 +81,10 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="@Url.Action("RoleMenuList","Mgr")">角色菜单</a>
+                                <a class="J_menuItem" href="@Url.Action("RoleMenuList","Mgr")">
+                                    <i class="fa fa-suitcase"></i>
+                                    角色菜单
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -606,22 +609,27 @@
                         </li>
                     </ul>
                 </div>
+                <div class="dropdown hidden-xs">
+                    <a class="right-sidebar-toggle" aria-expanded="false">
+                        <i class="fa fa-tasks"></i> 主题
+                    </a>
+                </div>
                 <a href="/User/LoginOut" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
             </div>
             <!--顶部标签栏结束-->
 
             <!--中间内容部分开始-->
-            <div class="row J_mainContent" id="content-main">
+            <div class="row J_mainContent main-no-footer fixed-nav" id="content-main">
                 <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="@Url.Action("Index","Mgr")" frameborder="0" data-id="@Url.Action("Index","Mgr")" seamless></iframe>
             </div>
             <!--中间内容部分结束-->
 
             <!--页脚开始-->
-            <div class="footer">
+            @*<div class="footer">
                 <div class="pull-right">
                     &copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>
                 </div>
-            </div>
+            </div>*@
             <!--页脚结束-->
 
         </div>
@@ -927,7 +935,7 @@
         <!--右侧边栏结束-->
 
         <!--mini聊天窗口开始-->
-        <div class="small-chat-box fadeInRight animated">
+        @*<div class="small-chat-box fadeInRight animated">
             <div class="heading" draggable="true">
                 <small class="chat-date pull-right">
                     2015.9.1
@@ -1012,7 +1020,7 @@
             <a class="open-small-chat">
                 <i class="fa fa-comments"></i>
             </a>
-        </div>
+        </div>*@
         <!--mini聊天窗口结束-->
     </div>
 
@@ -1030,5 +1038,12 @@
     <!-- 第三方插件 -->
     <script src="@Url.Content("~/js/plugins/pace/pace.min.js")"></script>
 
+    <script>
+        $(function(){
+            $(document).bind('onkeypress',function(e){
+                console.log(e.keyCode);
+            })
+        });
+    </script>
 </body>
 </html>

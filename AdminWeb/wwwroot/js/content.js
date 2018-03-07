@@ -70,3 +70,9 @@ function WinMove() {
         })
         .disableSelection();
 };
+
+(function () {
+    if ($.isFunction($.fn.bootstrapTable)) {
+        $.extend($.)
+    }
+})();

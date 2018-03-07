@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/css/bootstrap.min.css?v=3.3.6")" rel="stylesheet">
+    <link href="@Url.Content("~/css/font-awesome.css?v=4.4.0")" rel="stylesheet">
+    <link href="@Url.Content("~/css/animate.css")" rel="stylesheet">
+    <link href="@Url.Content("~/css/style.css?v=4.1.0")" rel="stylesheet">
+    <link href="@Url.Content("~/css/plugins/bootstrap-table/bootstrap-table.min.css")" rel="stylesheet">
+    <!-- 公共文件引用 -->
+    @Html.Partial("_ContentStaticFile")
+    <style>
+        .pagination-detail { margin-top: 0px !important; margin-bottom: 0px !important; }
+        .pagination { margin: 0px !important; }
+        .fixed-table-pagination { padding-top: 10px !important; }
+    </style>
+    <!-- 其它引用 -->
+    @RenderSection("Scripts", required: false)
+</head>
+<body class="gray-bg">
+    @RenderBody()
+</body>
+</html>
